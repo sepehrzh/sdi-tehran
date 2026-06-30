@@ -1,0 +1,64 @@
+# --- Data & generated outputs ---
+data/raw/
+data/processed/
+data/outputs/*
+!data/outputs/.gitkeep
+data/segments.geojson
+data/training_set.csv
+data/prediction_set.csv
+*.geojson
+
+# Model artefacts (regenerate via notebooks)
+models/*
+!models/.gitkeep
+trained_models/*
+!trained_models/.gitkeep
+evaluation_reports/*
+!evaluation_reports/.gitkeep
+*.joblib
+*.pkl
+
+# --- Credentials / secrets ---
+*.json
+!data/category_keys.json
+!data/model_scores.json
+*.key.json
+service-account*.json
+.env
+.env.*
+credentials/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- GCP ---
+gcloud/
+.gcloud/

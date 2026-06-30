@@ -1,0 +1,26 @@
+{
+  "policy_era": {
+    "metric": "cramers_v",
+    "score": 0.346
+  },
+  "dilap_index": {
+    "metric": "cramers_v",
+    "score": 0.2507
+  },
+  "landuse": {
+    "metric": "cramers_v",
+    "score": 0.1058
+  },
+  "mean_area": {
+    "metric": "r2",
+    "score": -0.00013765413987143482
+  },
+  "perimeter": {
+    "metric": "r2",
+    "score": 0.004895614356078659
+  },
+  "mean_pop": {
+    "metric": "r2",
+    "score": -4.765688311025862e-05
+  }
+}

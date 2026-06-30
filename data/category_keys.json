@@ -1,0 +1,41 @@
+{
+  "_comment": "Importance-ordered scores for categorical attributes. Keys are integer-encoded label values (as stored in dataset). Scores are linearly spaced 0-1 from lowest to highest importance, derived from author-defined orderings (see Phase 2 handoff). whole_CH_2 is used for SDI only; cluster labels require disambiguation (see handoff Priority 1).",
+  "landuse": {
+    "5": 1.0,
+    "4": 0.75,
+    "3": 0.5,
+    "1": 0.25,
+    "2": 0.0
+  },
+  "dilap_index": {
+    "0": 1.0,
+    "6": 0.833333,
+    "5": 0.666667,
+    "4": 0.5,
+    "3": 0.333333,
+    "2": 0.166667,
+    "1": 0.0
+  },
+  "policy_era": {
+    "6": 1.0,
+    "5": 0.8,
+    "4": 0.6,
+    "3": 0.4,
+    "2": 0.2,
+    "1": 0.0
+  },
+  "whole_CH_2": {
+    "6": 1.0,
+    "10": 0.909091,
+    "11": 0.818182,
+    "3": 0.727273,
+    "2": 0.636364,
+    "9": 0.545455,
+    "8": 0.454545,
+    "5": 0.363636,
+    "4": 0.272727,
+    "1": 0.181818,
+    "0": 0.090909,
+    "7": 0.0
+  }
+}
