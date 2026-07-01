@@ -17,7 +17,7 @@ This pipeline:
 3. Applies the trained models to the periphery, where ground truth doesn't exist
 4. Aggregates predictions into a single weighted, composite **SDI** per H3 hexagon, with weights derived from each model's own performance (Cramér's V for categorical attributes, R² for continuous)
 
-The project serves three purposes simultaneously: an academic paper with a reproducible pipeline, a portfolio piece, and a GCP learning exercise.
+The project serves three purposes simultaneously: an academic exercise with a reproducible pipeline, an experimental tool applicable to practice, and a potential contribution into a development process.
 
 ---
 
