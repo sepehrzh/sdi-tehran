@@ -8,7 +8,7 @@ A reproducible pipeline that predicts socioeconomic and physical disparity score
 
 ## Overview
 
-Formal Tehran has surveyed socioeconomic and physical attribute data (population density, dilapidation status, mean plot area, land use, policy era of development). The periphery does not. Space syntax centrality measures — which describe the structural and accessibility properties of the street network — are available across the *entire* network, both formal and peripheral.
+Formal Tehran has surveyed socioeconomic and physical attribute data (population density, dilapidation status, mean plot area, land use, policy era of development). The periphery does not. Space syntax centrality measures, which describe the structural and accessibility properties of the street network, are available across the *entire* network, both formal and peripheral.
 
 This pipeline:
 
@@ -150,7 +150,7 @@ The pipeline's final public outputs are hosted on Google Cloud Storage and consu
 
 ## Known limitations
 
-These are documented methodological limitations, not bugs — each is acknowledged in the paper rather than silently corrected, because attempted fixes didn't hold up under inspection.
+These are documented methodological limitations, not bugs. Each will be acknowledged in the paper rather than silently corrected, because attempted fixes didn't hold up under inspection. In fact, the identified limitations are among the novelties of the project that are worth digging into. This includes studying other predictive methods, hyper parameters, and a deep study into the validity of the relationship between centrality measures and socioeconomic metrics.
 
 1. **`mean_area` has negative R² (≈ −0.0003).** The regressor performs worse than a mean baseline for this attribute. Its SDI weight is correspondingly near-zero (the weighting scheme correctly discounts a poorly-performing predictor), so the effect on the composite index is negligible.
 

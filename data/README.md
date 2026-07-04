@@ -29,6 +29,16 @@ The pipeline's final, public-facing outputs (aggregated to H3 hexagons — no se
 
 These are what the live dashboard consumes, and what anyone reproducing only the aggregation/visualisation steps (rather than the full model pipeline) actually needs.
 
+## License
+
+The data outputs described in this document (`hex.geojson`, `classification.json`, `category_keys.json`, and any derived aggregate statistics) are licensed under **CC BY 4.0** — see [`data/LICENSE`](LICENSE). This is separate from the pipeline code, which is MIT-licensed (see the repository root [`LICENSE`](../LICENSE)).
+
+## Citation
+
+A formal data citation with DOI will be added here once the dataset is archived on Zenodo. In the meantime, please cite:
+
+> Zhand, S. (2026). *Spatial Disparity Index (SDI) — Tehran Periphery* [Data set]. https://github.com/sepehrzh/sdi-tehran
+
 ## Reproducing from scratch
 
 If you have access to equivalent source data (your own segment-level centrality measures and surveyed attribute data for a comparable formal/informal urban split), place files matching the schemas below into this directory and update `config.py` paths if needed.
