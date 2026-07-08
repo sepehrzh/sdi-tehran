@@ -46,7 +46,12 @@ CLASSIFICATION_JSON  = os.path.join(OUTPUTS_DIR, "classification.json")
 
 # ─── GCS ─────────────────────────────────────────────────────────────────────
 GCS_BUCKET       = "sdi-tehran-assets"
-GCS_OUTPUT_PATH  = "data/outputs"
+# Branch-isolated by default so this experiment can never silently overwrite
+# the live production path the public dashboard fetches client-side (see
+# phase 7a handoff, "Critical infrastructure note: GCS output isolation").
+# Override with SDI_EXPERIMENT_OUTPUT_PATH for a different run if needed;
+# falling back to "data/outputs" is NOT the default on this branch on purpose.
+GCS_OUTPUT_PATH  = os.environ.get("SDI_EXPERIMENT_OUTPUT_PATH", "data/outputs/experiments/class-weighting")
 GCS_PROJECT = "sdi-tehran-v1"
 
 # ─── Segment ID column ───────────────────────────────────────────────────────
@@ -81,6 +86,14 @@ MLP_HIDDEN_LAYERS  = (100, 50)
 MLP_MAX_ITER       = 500
 PCA_N_COMPONENTS   = 3
 N_CLUSTERS         = 12
+
+# Candidate categorical classifiers (experiment/class-weighting) — both
+# trained with explicit sample_weight, see NB02 Section 3 methodology note.
+RF_N_ESTIMATORS    = 300
+RF_MAX_DEPTH       = None
+HGB_MAX_ITER       = 300
+HGB_LEARNING_RATE  = 0.1
+HGB_MAX_DEPTH      = None
 
 # ─── H3 ──────────────────────────────────────────────────────────────────────
 H3_RESOLUTION        = 8
