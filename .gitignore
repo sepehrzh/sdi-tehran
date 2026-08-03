@@ -7,6 +7,7 @@ data/segments.geojson
 data/training_set.csv
 data/prediction_set.csv
 *.geojson
+*.gpkg
 
 # Model artefacts (regenerate via notebooks)
 models/*
